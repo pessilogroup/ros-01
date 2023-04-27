@@ -1,0 +1,12 @@
+#cloud-config
+ssh_authorized_keys:
+  - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC6t4hJUycVn5vx/JlNOIMvbvJOMdfT5j+Ysy/dahX1F9rkNpI6K+r0qZKKfDPKib/y7Je2iLV8Wojy31EI5B2epprZ1IeqSszGN6rD4nBlAvMoMa30aR9wb5NGJUIgVn1P5JsuRDMHAlaILZUJEyLA7sMakhmFcme42GwXXYmAhogPO5/xEwWaiHfBFUbpMkq7uIQyz8+bUDgMQ2ZRo0aqxlNFE0wAqixiDR5ZLO1dzDYHnxxjrqZO9SNJ9Ku3kud00HDn/flz7iRu28b3ofOleSLXw6VEMiFfZoB7YC56W48HYH5L83YPcOoARlg/Dy3410+ylRnDhhJRaqljEU3d
+rancher:
+  network:
+    interfaces:
+      eth*:
+        dhcp: true
+    dns:
+      nameservers:
+        - 8.8.8.8
+        - 8.8.4.4
